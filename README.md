@@ -19,7 +19,7 @@ Users need to be created before sending or getting messages. If messages are sen
 
 The unique identifier for each user is their username. No two user can be created with the same username.
 
-You can see a nice interactive documentation if you go to `http://127.0.0.1:8000/docs`.
+You can see a nice interactive documentation if you go to `http://127.0.0.1:8000/docs` after running the application.
 
 ## API Usage
 
@@ -304,7 +304,9 @@ curl -X DELETE "http://127.0.0.1:8000/users/bob/messages/" \
 
 ## Future Work
 
-- Authentication should be done for users, before fetching or sending messages.
+- Authentication and authorization should be implemented for users, before fetching or sending messages.
 - Deleting multiple messages can be improved. We can return a list of messages that were deleted.
 - We can add some healthcheck and monitoring.
-
+- A `user_id` for each user should be introduced. It makes more sense to be used as a primary key in the User database. Also, it provides more security.
+- We can add a cache if the user base grows.
+- We can use https for more security.
