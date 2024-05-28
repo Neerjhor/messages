@@ -19,6 +19,8 @@ Users need to be created before sending or getting messages. If messages are sen
 
 The unique identifier for each user is their username. No two user can be created with the same username.
 
+You can see a nice interactive documentation if you go to `http://127.0.0.1:8000/docs`.
+
 ## API Usage
 
 ### Create a new user
